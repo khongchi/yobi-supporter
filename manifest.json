@@ -1,0 +1,26 @@
+{
+    "name": "yobi supporter",
+    "version": "0.1.1",
+    "description": "help you to use yobi.",
+    "content_scripts": [
+        {
+            "matches": ["http://yobi.xehub.io:8888/*"],
+            "css": ["basic.css"],
+            "js": [
+                "jquery.js",
+                "contentscript.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "yobi-logo.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "manifest_version": 2
+}

@@ -1,0 +1,25 @@
+.project-page-wrap {
+	width: 90%;
+}
+
+#mode-select {
+	display: none !important
+}
+
+.textarea-box.dual textarea {
+	tab-size: 4;
+}
+
+.textarea-box.dual, .markdown-preview.dual {
+	display: block !important;
+}
+
+.tab-content > .tab-pane.dual {
+	float: left;
+	width: 50%;
+	display: block !important;
+}
+
+.textarea-box.dual {
+	left: 0;
+}
