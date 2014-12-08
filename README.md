@@ -6,7 +6,10 @@ chrome extension for [yobi](https://github.com/naver/yobi)
 ## Features
 
 1. Add the Dual View mode to all markdown editor.
+> ![screenshot_daulview.png](https://raw.githubusercontent.com/khongchi/yobi-supporter/master/screenshot_dualview.png)
 2. Add user-defined menus to project menu. (use extension's popup page for configuration)
+> ![screenshot_menu.png](https://raw.githubusercontent.com/khongchi/yobi-supporter/master/screenshot_menu.png)
+
 
 ## Installation
 
