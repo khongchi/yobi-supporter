@@ -4,7 +4,7 @@
     "description": "help you to use yobi.",
     "content_scripts": [
         {
-            "matches": ["http://yobi.xehub.io:8888/*"],
+            "matches": ["url of your yobi project"],
             "css": ["basic.css"],
             "js": [
                 "jquery.js",
