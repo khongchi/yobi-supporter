@@ -18,7 +18,7 @@ chrome extension for [yobi](https://github.com/naver/yobi)
   ```
   git clone https://github.com/khongchi/yobi-supporter.git yobi-supporter
   ```
-1. input your yobi project url to `content_scripts.matches` array in `manifest.json`
+1. Input your yobi project url to `content_scripts.matches` array in `manifest.json`
 1. Visit  `chrome://extensions/` in your chrome
 1. Ensure that the `Developer mode` checkbox in the top right-hand corner is checked
 1. Click Load unpacked extension… to pop up a file-selection dialog.
