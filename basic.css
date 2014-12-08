@@ -1,13 +1,11 @@
-.project-page-wrap {
-	width: 90%;
-}
-
 #mode-select {
 	display: none !important
 }
 
+
 .textarea-box.dual textarea {
 	tab-size: 4;
+	min-height: 1000px;
 }
 
 .textarea-box.dual, .markdown-preview.dual {

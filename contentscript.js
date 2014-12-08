@@ -2,13 +2,23 @@ chrome.runtime.sendMessage({method: "getExtraMenu"}, function (response) {
     addLinkToMenu(response.extraMenus);
 });
 
-function addLinkToMenu(extraMenu) {
+chrome.runtime.sendMessage({method: "getViewMode"}, function (response) {
+    setWideView(response.showWide);
+});
 
-    console.log(extraMenu);
+function addLinkToMenu(extraMenu) {
 
     jQuery.each(extraMenu, function (menu) {
         jQuery('ul.project-menu-nav.project-menu-gruop').append('<li><a class="label label-default" href="' + this.url + '">' + this.title + '</a></li>');
     })
+}
+
+function setWideView(showWide) {
+    console.log(showWide);
+    if(showWide == true) {
+        jQuery('.project-page-wrap').css('width', '90%');
+    }
+    console.log(showWide);
 }
 
 function addDualViewButton() {
