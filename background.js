@@ -18,6 +18,3 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     else
         sendResponse({}); // snub them.
 });
-
-/*chrome.tabs.executeScript(null, {code: "addLinkToMenu('" + $menuJson + "')"});
- chrome.tabs.executeScript(null, {code: "console.log('hi');"});*/
