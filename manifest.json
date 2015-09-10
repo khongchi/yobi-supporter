@@ -1,6 +1,7 @@
 {
     "name": "yobi supporter",
     "version": "0.1.1",
+    "homepage_url": "https://github.com/khongchi/yobi-supporter",
     "description": "help you to use yobi.",
     "content_scripts": [
         {
