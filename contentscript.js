@@ -1,11 +1,11 @@
 jQuery(function ($) {
 
     function setWideView(showWide) {
-        console.log(showWide);
         if (showWide == true) {
             $('.project-page-wrap').css('width', '90%');
+        } else {
+            $('.project-page-wrap').css('width', '1170px');
         }
-        console.log(showWide);
     }
 
     function addDualViewButton() {
@@ -56,9 +56,9 @@ jQuery(function ($) {
         setWideView(response.showWide);
     });
 
-
     $('.nav-tabs')
         .on('click', 'a[data-mode=dual]', function (e) {
+            setWideView(true);
             var editorId = this.href.split('-').pop();
             var box = $(this).closest('div').find('.tab-pane').addClass('dual').end();
             var textarea = box.find('.textarea-box').addClass('dual');
@@ -67,6 +67,7 @@ jQuery(function ($) {
             syncHeight(textarea, preview);
         })
         .on('click', 'a[data-mode=preview],a[data-mode=edit]', function (e) {
+            setWideView(false);
             $(this).parents('div').find('.tab-pane, .textarea-box, .markdown-preview').removeClass('dual');
         });
 
@@ -84,6 +85,5 @@ jQuery(function ($) {
             }
             syncHeight(welTextarea, welPreview);
         }
-
     }, 1000);
 });
